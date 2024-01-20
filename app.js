@@ -18,5 +18,9 @@ while (numUser!=secretNumber) {
         numbersOfTries+=1;
         changerWord=(numbersOfTries>1)?'veces':'vez'
         alert('No acertaste');
+        if(numbersOfTries>3){
+            alert('se te acabaron los intentos');
+            break;
+        }
     }
 }
