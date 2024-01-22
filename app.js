@@ -1,10 +1,10 @@
 // este son las variables
-let secretNumber = 6;
+let secretNumber = Math.floor(Math.random()*10+1);
 let numUser=0;
 let numbersOfTries=1;
 let changerWord='vez';
 while (numUser!=secretNumber) {
-    numUser = prompt("Me indicas un numero  entre 1 y 10 porfavor");
+    numUser = parseInt(prompt("Me indicas un numero  entre 1 y 10 porfavor"));
     console.log(numUser);
     //este codigo realiza la confirmacion
     if (numUser == secretNumber) {
